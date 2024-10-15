@@ -91,9 +91,11 @@ nav li a {
 .banner-title {
   font-weight: 800;
   font-size: 85px;
+  margin: 20px 0;
 }
 .banner-desc {
   font-size: 18px;
+  margin-bottom: 30px;
 }
 .banner-img {
   width: 584px;
