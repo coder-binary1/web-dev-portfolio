@@ -250,6 +250,7 @@ footer textarea {
   }
   .footer-column {
     width: calc(100% - 40px);
+    padding: 10px 0;
   }
   nav {
     gap: 10px;
