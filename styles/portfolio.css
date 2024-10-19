@@ -121,6 +121,7 @@ main section {
 .about-items {
   display: flex;
   justify-content: space-around;
+  gap: 20px;
 }
 .item-title {
   font-size: 20px;
@@ -210,4 +211,52 @@ footer textarea {
 }
 footer textarea {
   padding-top: 30px;
+}
+
+/* responsive media query */
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .btn-primary {
+    padding: 10px 20px;
+  }
+  header {
+    background-image: none;
+  }
+  .banner {
+    margin: 20px;
+  }
+  .banner-img {
+    width: 100%;
+  }
+  .about {
+    padding: 20px;
+  }
+  .skills > p {
+    width: auto;
+    padding: 0 15px;
+  }
+
+  nav,
+  .banner,
+  .about-items,
+  .skills-container,
+  .resume-container,
+  footer {
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  .footer-column {
+    width: calc(100% - 40px);
+  }
+  nav {
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: rgb(255, 248, 243);
+  }
 }
